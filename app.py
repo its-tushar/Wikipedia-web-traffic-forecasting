@@ -18,7 +18,7 @@ final_object=final()
 
 
 app.route('/',methods=['GET'])
-def index():
+def home():
     return flask.render_template('index.html')
 
 
