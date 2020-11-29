@@ -17,12 +17,12 @@ final_object=final()
 ###################################################
 
 
-@app.route('/index',methods=['GET'])
+app.route('/index',methods=['GET'])
 def index():
     return flask.render_template('index.html')
 
 
-@app.route('/predict', methods=['POST'])
+app.route('/predict', methods=['POST'])
 def predict():
     index=request.form.to_dict()['Enter_index']
     date=request.form.to_dict()['Enter_date']
