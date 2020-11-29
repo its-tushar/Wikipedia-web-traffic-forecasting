@@ -5,7 +5,6 @@ from keras.models import model_from_json
 import pandas as pd
 import datetime
 import re
-from prettytable import PrettyTable
 
 from final_file import final
 # https://www.tutorialspoint.com/flask
