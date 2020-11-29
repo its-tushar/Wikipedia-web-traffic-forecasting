@@ -3,7 +3,6 @@ import numpy as np
 import pickle
 from keras.models import model_from_json
 import pandas as pd
-from prettytable import Prettytable
 import datetime
 import re
 
