@@ -1,1 +1,0 @@
-web: gbunicorn app:app
