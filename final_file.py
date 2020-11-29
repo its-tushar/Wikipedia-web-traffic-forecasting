@@ -16,11 +16,11 @@ warnings.filterwarnings('ignore')
 class final:
     def load_files(self):
         #https://machinelearningmastery.com/save-load-keras-deep-learning-models/
-        #json_file = open('model.json', 'r')
-        #loaded_model_json = json_file.read()
-        #json_file.close()
-        #self.model = model_from_json(loaded_model_json)
-        #self.model.load_weights("model.h5")
+        json_file = open('model.json', 'r')
+        loaded_model_json = json_file.read()
+        json_file.close()
+        self.model = model_from_json(loaded_model_json)
+        self.model.load_weights("model.h5")
 
         with open('access_enc.pkl','rb') as file:
             self.access_enc=pickle.load(file)
